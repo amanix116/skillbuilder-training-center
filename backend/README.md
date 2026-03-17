@@ -1,6 +1,6 @@
-# Digital Training Center - Backend
+# SkillBuilder Training Center
 
-Node.js + Express backend for the Digital Training Center website.
+Node.js + Express backend for the SkillBuilder Training Center website.
 
 ## Prerequisites
 

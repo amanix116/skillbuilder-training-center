@@ -40,7 +40,7 @@ export default function AdminLogin() {
         <div className="login-card">
           <div className="login-header">
             <h1>Admin Login</h1>
-            <p>Digital Training Center</p>
+            <p>SkillBuilder Training Center</p>
           </div>
 
           {error && <div className="error-message">{error}</div>}
