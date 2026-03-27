@@ -244,7 +244,7 @@ npm start
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 ✅ Professional UI/UX
 ✅ JWT Authentication  
@@ -257,7 +257,7 @@ npm start
 
 ---
 
-## 🚀 You're Ready!
+##  You're Ready!
 
 1. Start backend: `npm run dev`
 2. Start frontend: `npm run dev`
@@ -265,4 +265,4 @@ npm start
 4. Login with admin credentials
 5. Start managing!
 
-**Enjoy! 🎉**
+** thank you**
