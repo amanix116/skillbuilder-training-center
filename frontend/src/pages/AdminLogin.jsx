@@ -54,7 +54,7 @@ export default function AdminLogin() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="admin@trainingcenter.com"
+                placeholder="Enter admin email"
                 required
               />
             </div>
@@ -78,9 +78,9 @@ export default function AdminLogin() {
           </form>
 
           <div className="login-footer">
-            <p>Demo Credentials:</p>
+            {/* <p>Demo Credentials:</p>
             <p>Email: admin@trainingcenter.com</p>
-            <p>Password: admin123</p>
+            <p>Password: admin123</p> */}
           </div>
         </div>
       </div>
