@@ -1,0 +1,270 @@
+.about-page {
+  min-height: calc(100vh - 80px);
+  background-color: #f8f9fa;
+}
+
+/* About Hero Section */
+.about-hero {
+  background-image: url('../images/home2.jpg'); /* change image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  padding: 6rem 20px;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+/* Dark Overlay */
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65); /* opacity overlay */
+  z-index: 1;
+}
+
+/* Keep text above overlay */
+.about-hero h1,
+.about-hero p {
+  position: relative;
+  z-index: 2;
+}
+
+/* Heading Animation */
+.about-hero h1 {
+  font-size: 2.7rem;
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: fadeSlideDown 1s ease forwards;
+}
+
+/* Paragraph Animation */
+.about-hero p {
+  font-size: 1.2rem;
+  opacity: 0;
+  animation: fadeSlideUp 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+/* Animations */
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ /* .container */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 3rem 0;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #987b2a;
+  margin-bottom: 2rem;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* Mission Section */
+.mission-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mission-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.mission-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #987b2a;
+}
+
+.mission-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.mission-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mission-card ul li {
+  color: #666;
+  line-height: 1.8;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.mission-card ul li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #987b2a;
+  font-weight: bold;
+}
+
+/* Trainers Section */
+.trainers-section {
+  background: white;
+  padding: 3rem;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+
+.trainers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.trainer-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.trainer-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.trainer-image {
+  margin-bottom: 1.5rem;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.trainer-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.trainer-placeholder {
+  font-size: 3rem;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trainer-card h3 {
+  color: #987b2a;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.trainer-role {
+  color: #987b2a;
+  font-weight: 600;
+}
+
+/* Stats Section */
+.stats-section {
+  background: linear-gradient(135deg, #1e3c72 0%, #987b2a 100%);
+  padding: 3rem;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+.stat-card h3 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #987b2a;
+}
+
+.stat-card p {
+  font-size: 1.1rem;
+}
+
+.loading {
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  .trainers-section {
+    padding: 1.5rem;
+  }
+
+  .stats-section {
+    padding: 1.5rem;
+  }
+}
